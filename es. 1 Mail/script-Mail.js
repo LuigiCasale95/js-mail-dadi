@@ -6,15 +6,17 @@ stampa un messaggio appropriato sull’esito del controllo, utilizzando un ciclo
 
 let listaInvitati = ["luigi@gmail.com", "michele@gmail.com", "mario@gmail.com", "michela@gmail.com", "alessia@gmail.com", "ottavio@gmail.com"]
  let mailUtente = prompt("Inserisci la tua mail")
-/*  let trovato = false
- */
+ let trovato = false
+
 for (i = 0; i < listaInvitati.length; i++) {
   if (listaInvitati[i] === mailUtente) {
-        console.log(`Complimenti ***${mailUtente}*** sei tra gli invitati`)
-/*         trovato = true
- */        break;
-    } else {
-          console.log(`Mail ***${mailUtente}*** non trovata, non sei tra gli invitati`)
-       break
-      }
+      trovato = true   
+    } 
+  }
+
+if (trovato === true) {
+    console.log(`Complimenti ***${mailUtente}*** sei tra gli invitati`)
+} else {
+    console.log("mail non trovata")
 }
+     

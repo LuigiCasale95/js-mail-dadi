@@ -8,7 +8,7 @@ console.log("Il tuo risultato è " + dadoUtente)
 
 /* Lancio dado computer  */
 let dadoComputer = Math.floor(Math.random() * 6) + 1
-console.log("Il risultato del computer è " + dadoUtente)
+console.log("Il risultato del computer è " + dadoComputer)
 
 /* Confonto riultato utente contro risultato computer */
 let risultato
