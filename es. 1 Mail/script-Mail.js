@@ -12,11 +12,10 @@ for (i = 0; i < listaInvitati.length; i++) {
   if (listaInvitati[i] === mailUtente) {
       trovato = true   
     } 
-  }
+}
 
 if (trovato === true) {
     console.log(`Complimenti ***${mailUtente}*** sei tra gli invitati`)
 } else {
     console.log("mail non trovata")
 }
-     
